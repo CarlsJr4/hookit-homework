@@ -1,6 +1,17 @@
 import React from 'react';
 
 export default function Table({ data }) {
+  const rows = data.map(item => {
+    return (
+      <tr>
+        <td>{item.Displayname}</td>
+        <td>{item.Likes}</td>
+        <td>{item.Comments}</td>
+        <td>{item.Views}</td>
+      </tr>
+    );
+  });
+
   return (
     <div>
       <table>
@@ -10,24 +21,7 @@ export default function Table({ data }) {
           <th>Comments</th>
           <th>Views</th>
         </tr>
-        <tr>
-          <td>EspnBrazil</td>
-          <td>899</td>
-          <td>1</td>
-          <td>6601</td>
-        </tr>
-        <tr>
-          <td>EspnBrazil</td>
-          <td>899</td>
-          <td>1</td>
-          <td>6601</td>
-        </tr>
-        <tr>
-          <td>EspnBrazil</td>
-          <td>899</td>
-          <td>1</td>
-          <td>6601</td>
-        </tr>
+        {rows}
       </table>
     </div>
   );

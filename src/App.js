@@ -25,6 +25,64 @@ const fakeData = [
     Comments: 1,
     Views: 0,
   },
+  {
+    Displayname: 'EspnBrazil',
+    Likes: 899,
+    SocialPost_ID: 1308574259,
+    Comments: 1,
+    Views: 6601,
+  },
+];
+
+const fakePostValues = [
+  {
+    BrandName: 'EsteeLauder',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 0.0261454735047506,
+  },
+  {
+    BrandName: 'morettiuk',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 0.0832368229907894,
+  },
+  {
+    BrandName: 'corona',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 3.08035919166316,
+  },
+  {
+    BrandName: 'Incasedesigns',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 0.0864575854878506,
+  },
+  {
+    BrandName: 'wsl',
+    TagValue: 0.786438027260161,
+    SocialPost_ID: 1308574259,
+    MentionValue: 0.786438027260161,
+  },
+  {
+    BrandName: 'CoronaAus',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 3.08035919166316,
+  },
+  {
+    BrandName: 'AnheuserBuschInbev',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 3.08035919166316,
+  },
+  {
+    BrandName: 'BirraMoretti',
+    TagValue: 0,
+    SocialPost_ID: 1308574259,
+    MentionValue: 0.0832368229907894,
+  },
 ];
 
 function App() {
@@ -35,7 +93,7 @@ function App() {
       <br />
       <PostsTable data={fakeData} />
       <br />
-      <PostsValueTable />
+      <PostsValueTable data={fakePostValues} />
     </div>
   );
 }

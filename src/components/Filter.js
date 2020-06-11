@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Filter({ handleChange, filterText }) {
+export default function Filter({ handleChange, filterText, handleSelect }) {
   return (
     <div>
       <label htmlFor="nameFilter">Search by name: </label>
@@ -11,14 +11,14 @@ export default function Filter({ handleChange, filterText }) {
         name="nameFilter"
         id="nameFilter"
       />
-      <label htmlFor="optionFilter">Filter by: </label>
-      <select name="optionFilter" id="optionFilter">
+      <label htmlFor="optionFilter">Sort by: </label>
+      <select onChange={handleSelect} name="optionFilter" id="optionFilter">
         <option value="">(none)</option>
-        <option value="displayName">Name</option>
-        <option value="likes">Likes</option>
-        <option value="comments">Comments</option>
-        <option value="views">Views</option>
-        <option value="interactions">Interactions</option>
+        <option value="Displayname">Alphabetical</option>
+        <option value="Likes">Highest Likes</option>
+        <option value="Comments">Highest Comments</option>
+        <option value="Views">Highest Views</option>
+        <option value="Interactions">Highest Interactions</option>
       </select>
     </div>
   );

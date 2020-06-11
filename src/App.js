@@ -61,6 +61,7 @@ function App() {
   // TODO: Set up react router
 
   const [posts, updatePosts] = useState([]);
+  const [selectValue, updateSelectValue] = useState();
 
   useEffect(() => {
     async function getData() {
@@ -82,12 +83,25 @@ function App() {
     updateFilterText(e.target.value);
   }
 
+  function handleSelect(e) {
+    updateSelectValue(e.target.value);
+  }
+
   return (
     <div className="app">
       <h1>Your Dashboard</h1>
-      <Filter handleChange={handleChange} filterText={filterText} />
+      <Filter
+        handleChange={handleChange}
+        handleSelect={handleSelect}
+        filterText={filterText}
+        selectValue={selectValue}
+      />
       <br />
-      <PostsTable data={posts} filterText={filterText} />
+      <PostsTable
+        data={posts}
+        filterText={filterText}
+        selectValue={selectValue}
+      />
       <br />
       {/* <PostsValueTable data={fakePostValues} /> */}
     </div>

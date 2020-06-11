@@ -3,7 +3,7 @@ import React from 'react';
 export default function Table({ data }) {
   const rows = data.map(item => {
     return (
-      <tr>
+      <tr key={item.SocialPost_ID}>
         <td>{item.Displayname}</td>
         <td>{item.Likes}</td>
         <td>{item.Comments}</td>
@@ -15,13 +15,15 @@ export default function Table({ data }) {
   return (
     <div>
       <table>
-        <tr>
-          <th>Name</th>
-          <th>Likes</th>
-          <th>Comments</th>
-          <th>Views</th>
-        </tr>
-        {rows}
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Likes</th>
+            <th>Comments</th>
+            <th>Views</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
       </table>
     </div>
   );

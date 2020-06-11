@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hookit-homework/precache-manifest.528fbfd24c6bd90c5cb3855093ba6da1.js"
+  "/hookit-homework/precache-manifest.ca4bb6a5ce6bf184b15ca42d5d7189ef.js"
 );
 
 self.addEventListener('message', (event) => {

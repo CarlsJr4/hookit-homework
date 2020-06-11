@@ -1,10 +1,16 @@
 import React from 'react';
 
-export default function Filter() {
+export default function Filter({ handleChange, filterText }) {
   return (
     <div>
       <label htmlFor="nameFilter">Search by name: </label>
-      <input type="text" name="nameFilter" id="nameFilter" />
+      <input
+        onChange={handleChange}
+        value={filterText}
+        type="text"
+        name="nameFilter"
+        id="nameFilter"
+      />
       <label htmlFor="optionFilter">Filter by: </label>
       <select name="optionFilter" id="optionFilter">
         <option value="">(none)</option>

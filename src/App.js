@@ -56,7 +56,6 @@ import axios from 'axios';
 // ];
 
 function App() {
-  // TODO: Controlled components
   // TODO: Sorting functions
   // TODO: CSS or SASS
   // TODO: Set up react router
@@ -77,12 +76,18 @@ function App() {
     getData();
   }, []);
 
+  const [filterText, updateFilterText] = useState('');
+
+  function handleChange(e) {
+    updateFilterText(e.target.value);
+  }
+
   return (
     <div className="app">
       <h1>Your Dashboard</h1>
-      <Filter />
+      <Filter handleChange={handleChange} filterText={filterText} />
       <br />
-      <PostsTable data={posts} />
+      <PostsTable data={posts} filterText={filterText} />
       <br />
       {/* <PostsValueTable data={fakePostValues} /> */}
     </div>

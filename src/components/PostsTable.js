@@ -1,16 +1,20 @@
 import React from 'react';
 
-export default function Table({ data }) {
-  const rows = data.map(item => {
-    return (
-      <tr key={item.SocialPost_ID}>
-        <td>{item.Displayname}</td>
-        <td>{item.Likes}</td>
-        <td>{item.Comments}</td>
-        <td>{item.Views}</td>
-      </tr>
-    );
-  });
+export default function Table({ data, filterText }) {
+  const filteredRows = data
+    .filter(item =>
+      item.Displayname.toLowerCase().includes(filterText.toLowerCase())
+    )
+    .map(item => {
+      return (
+        <tr key={item.SocialPost_ID}>
+          <td>{item.Displayname}</td>
+          <td>{item.Likes}</td>
+          <td>{item.Comments}</td>
+          <td>{item.Views}</td>
+        </tr>
+      );
+    });
 
   return (
     <div>
@@ -23,7 +27,7 @@ export default function Table({ data }) {
             <th>Views</th>
           </tr>
         </thead>
-        <tbody>{rows}</tbody>
+        <tbody>{filteredRows}</tbody>
       </table>
     </div>
   );

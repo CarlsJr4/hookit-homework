@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Filter({ handleChange, filterText, handleSelect }) {
   return (
-    <div>
+    <div className="dashboard__filter">
       <label htmlFor="nameFilter">Search by name: </label>
       <input
         onChange={handleChange}

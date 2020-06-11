@@ -11,7 +11,7 @@ function App() {
 
   const [posts, updatePosts] = useState([]);
   const [postValues, updatePostValues] = useState([]);
-  const [currentPost, updateCurrentPost] = useState(null);
+  const [currentPost, updateCurrentPost] = useState({});
   const [selectValue, updateSelectValue] = useState();
 
   useEffect(() => {
@@ -62,7 +62,6 @@ function App() {
           filterText={filterText}
           selectValue={selectValue}
         />
-        <br />
         <Switch>
           <Route path="/" exact>
             <PostsTable

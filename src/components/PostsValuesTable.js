@@ -17,7 +17,7 @@ export default function PostsValuesTable({ data, currentPost }) {
 
   return (
     <div>
-      <h1>Posts made by {currentPost.name}</h1>
+      <h3>Posts made by {currentPost.name}</h3>
       <table>
         <thead>
           <tr>

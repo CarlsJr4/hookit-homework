@@ -56,14 +56,14 @@ function App() {
     <Router>
       <div className="app">
         <h1>Your Dashboard</h1>
-        <Filter
-          handleChange={handleChange}
-          handleSelect={handleSelect}
-          filterText={filterText}
-          selectValue={selectValue}
-        />
         <Switch>
           <Route path="/" exact>
+            <Filter
+              handleChange={handleChange}
+              handleSelect={handleSelect}
+              filterText={filterText}
+              selectValue={selectValue}
+            />
             <PostsTable
               data={posts}
               filterText={filterText}

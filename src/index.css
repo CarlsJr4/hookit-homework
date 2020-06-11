@@ -17,6 +17,11 @@ body {
 
 input {
   margin-right: 1rem;
+  padding: 0.25rem;
+}
+
+select {
+  padding: 0.25rem;
 }
 
 table {

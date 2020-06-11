@@ -27,7 +27,15 @@ table {
 
 td,
 th {
-  border: 2px solid #dddddd;
   text-align: left;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+tr {
+  border: 1px solid lightgrey;
+}
+
+th {
+  background-color: #2ea117;
+  color: white;
 }

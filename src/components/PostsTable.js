@@ -41,18 +41,16 @@ export default function Table({
   const finalRows = filteredRows.map(item => {
     return (
       <tr key={item.SocialPost_ID}>
-        <Link to="/postValues">
-          <td
-            onClick={() =>
-              updateCurrentPost({
-                name: item.Displayname,
-                id: item.SocialPost_ID,
-              })
-            }
-          >
-            {item.Displayname}
-          </td>
-        </Link>
+        <td
+          onClick={() =>
+            updateCurrentPost({
+              name: item.Displayname,
+              id: item.SocialPost_ID,
+            })
+          }
+        >
+          <Link to="/postValues">{item.Displayname}</Link>
+        </td>
         <td>{item.Likes}</td>
         <td>{item.Comments}</td>
         <td>{item.Views}</td>

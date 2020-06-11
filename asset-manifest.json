@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hookit-homework/static/css/main.0148b045.chunk.css",
+    "main.js": "/hookit-homework/static/js/main.1b3ad032.chunk.js",
+    "main.js.map": "/hookit-homework/static/js/main.1b3ad032.chunk.js.map",
+    "runtime-main.js": "/hookit-homework/static/js/runtime-main.39690c17.js",
+    "runtime-main.js.map": "/hookit-homework/static/js/runtime-main.39690c17.js.map",
+    "static/js/2.30ff1b32.chunk.js": "/hookit-homework/static/js/2.30ff1b32.chunk.js",
+    "static/js/2.30ff1b32.chunk.js.map": "/hookit-homework/static/js/2.30ff1b32.chunk.js.map",
+    "index.html": "/hookit-homework/index.html",
+    "precache-manifest.528fbfd24c6bd90c5cb3855093ba6da1.js": "/hookit-homework/precache-manifest.528fbfd24c6bd90c5cb3855093ba6da1.js",
+    "service-worker.js": "/hookit-homework/service-worker.js",
+    "static/css/main.0148b045.chunk.css.map": "/hookit-homework/static/css/main.0148b045.chunk.css.map",
+    "static/js/2.30ff1b32.chunk.js.LICENSE.txt": "/hookit-homework/static/js/2.30ff1b32.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39690c17.js",
+    "static/js/2.30ff1b32.chunk.js",
+    "static/css/main.0148b045.chunk.css",
+    "static/js/main.1b3ad032.chunk.js"
+  ]
+}

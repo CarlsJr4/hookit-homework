@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   sortAlphabetical,
   sortLikes,
@@ -7,7 +8,12 @@ import {
   sortInteractions,
 } from '../sortHelpers';
 
-export default function Table({ data, filterText, selectValue }) {
+export default function Table({
+  data,
+  filterText,
+  selectValue,
+  updateCurrentPost,
+}) {
   let filteredRows = data.filter(item =>
     item.Displayname.toLowerCase().includes(filterText.toLowerCase())
   );
@@ -35,7 +41,18 @@ export default function Table({ data, filterText, selectValue }) {
   const finalRows = filteredRows.map(item => {
     return (
       <tr key={item.SocialPost_ID}>
-        <td>{item.Displayname}</td>
+        <Link to="/postValues">
+          <td
+            onClick={() =>
+              updateCurrentPost({
+                name: item.Displayname,
+                id: item.SocialPost_ID,
+              })
+            }
+          >
+            {item.Displayname}
+          </td>
+        </Link>
         <td>{item.Likes}</td>
         <td>{item.Comments}</td>
         <td>{item.Views}</td>

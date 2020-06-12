@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hookit-homework/static/css/main.adfc6d59.chunk.css",
-    "main.js": "/hookit-homework/static/js/main.d7246b91.chunk.js",
-    "main.js.map": "/hookit-homework/static/js/main.d7246b91.chunk.js.map",
+    "main.js": "/hookit-homework/static/js/main.fdcd15b1.chunk.js",
+    "main.js.map": "/hookit-homework/static/js/main.fdcd15b1.chunk.js.map",
     "runtime-main.js": "/hookit-homework/static/js/runtime-main.39690c17.js",
     "runtime-main.js.map": "/hookit-homework/static/js/runtime-main.39690c17.js.map",
     "static/js/2.3063304a.chunk.js": "/hookit-homework/static/js/2.3063304a.chunk.js",
     "static/js/2.3063304a.chunk.js.map": "/hookit-homework/static/js/2.3063304a.chunk.js.map",
     "index.html": "/hookit-homework/index.html",
-    "precache-manifest.fd1666932d9fbb87a151db4ba7d774f8.js": "/hookit-homework/precache-manifest.fd1666932d9fbb87a151db4ba7d774f8.js",
+    "precache-manifest.70c86fb275d15d363026be2a0c59aab1.js": "/hookit-homework/precache-manifest.70c86fb275d15d363026be2a0c59aab1.js",
     "service-worker.js": "/hookit-homework/service-worker.js",
     "static/css/main.adfc6d59.chunk.css.map": "/hookit-homework/static/css/main.adfc6d59.chunk.css.map",
     "static/js/2.3063304a.chunk.js.LICENSE.txt": "/hookit-homework/static/js/2.3063304a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.39690c17.js",
     "static/js/2.3063304a.chunk.js",
     "static/css/main.adfc6d59.chunk.css",
-    "static/js/main.d7246b91.chunk.js"
+    "static/js/main.fdcd15b1.chunk.js"
   ]
 }

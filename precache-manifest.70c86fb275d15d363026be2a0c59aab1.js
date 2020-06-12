@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cab911cc57e9304c84ee33ae0f725722",
+    "revision": "46db302df3237fe884115bf40d60fd87",
     "url": "/hookit-homework/index.html"
   },
   {
-    "revision": "37556c243d273124bf68",
+    "revision": "b7581ba2a7c4b046f5c6",
     "url": "/hookit-homework/static/css/main.adfc6d59.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hookit-homework/static/js/2.3063304a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37556c243d273124bf68",
-    "url": "/hookit-homework/static/js/main.d7246b91.chunk.js"
+    "revision": "b7581ba2a7c4b046f5c6",
+    "url": "/hookit-homework/static/js/main.fdcd15b1.chunk.js"
   },
   {
     "revision": "3ac5702ddf841e3c2743",

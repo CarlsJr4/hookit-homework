@@ -34,6 +34,10 @@ ul {
   position: fixed;
 }
 
+nav {
+  min-width: 70px;
+}
+
 ul li {
   margin: 2rem 0;
   color: white;

@@ -36,10 +36,7 @@ ul {
 
 ul li {
   margin: 2rem 0;
-}
-
-.dashboard__filter {
-  margin: 2rem 0;
+  color: white;
 }
 
 input {

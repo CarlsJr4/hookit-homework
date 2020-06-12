@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import PostsTable from './components/PostsTable';
 import PostsValueTable from './components/PostsValuesTable';
 import ViewsPlot from './components/ViewsPlot';
@@ -74,8 +74,12 @@ function App() {
           <div className="left">
             <nav>
               <ul>
-                <li>Posts</li>
-                <li>Visualizer</li>
+                <Link to="/">
+                  <li>Posts</li>
+                </Link>
+                <Link to="/visualizer">
+                  <li>Visualizer</li>
+                </Link>
               </ul>
             </nav>
           </div>
@@ -83,7 +87,6 @@ function App() {
             <h1>Your Dashboard</h1>
             <Switch>
               <Route path="/" exact>
-                <ViewsPlot data={posts} />
                 <h3>All Posts</h3>
                 <Filter
                   handleChange={handleChange}
@@ -100,6 +103,9 @@ function App() {
               </Route>
               <Route path="/postValues">
                 <PostsValueTable data={postValues} currentPost={currentPost} />
+              </Route>
+              <Route path="/visualizer">
+                <ViewsPlot data={posts} />
               </Route>
             </Switch>
           </div>

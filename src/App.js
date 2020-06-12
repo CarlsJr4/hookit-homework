@@ -70,27 +70,40 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>Your Dashboard</h1>
-        <Switch>
-          <Route path="/" exact>
-            <ViewsPlot data={posts} />
-            <Filter
-              handleChange={handleChange}
-              handleSelect={handleSelect}
-              filterText={filterText}
-              selectValue={selectValue}
-            />
-            <PostsTable
-              data={posts}
-              filterText={filterText}
-              selectValue={selectValue}
-              updateCurrentPost={updateCurrentPost}
-            />
-          </Route>
-          <Route path="/postValues">
-            <PostsValueTable data={postValues} currentPost={currentPost} />
-          </Route>
-        </Switch>
+        <div className="content">
+          <div className="left">
+            <nav>
+              <ul>
+                <li>Posts</li>
+                <li>Visualizer</li>
+              </ul>
+            </nav>
+          </div>
+          <div className="right">
+            <h1>Your Dashboard</h1>
+            <Switch>
+              <Route path="/" exact>
+                <ViewsPlot data={posts} />
+                <h3>All Posts</h3>
+                <Filter
+                  handleChange={handleChange}
+                  handleSelect={handleSelect}
+                  filterText={filterText}
+                  selectValue={selectValue}
+                />
+                <PostsTable
+                  data={posts}
+                  filterText={filterText}
+                  selectValue={selectValue}
+                  updateCurrentPost={updateCurrentPost}
+                />
+              </Route>
+              <Route path="/postValues">
+                <PostsValueTable data={postValues} currentPost={currentPost} />
+              </Route>
+            </Switch>
+          </div>
+        </div>
       </div>
     </Router>
   );

@@ -44,7 +44,7 @@ export default function ViewsPlot({ data }) {
   };
   return (
     <div>
-      <h1>Top Five Most Viewed Posts</h1>
+      <h3>Top Five Most Viewed Posts</h3>
       <Bar data={barData} options={options} />
     </div>
   );
